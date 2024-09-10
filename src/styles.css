@@ -1,0 +1,28 @@
+:root{
+    --first: #c1ddc7;
+    --second: #f5e8c6;
+    --third: #bbcd77;
+    --fourth: #dc8051;
+    --fifth: #f4d279;
+}
+
+.bg-first{
+    background-color: var(--first);
+    color: white;
+}
+.bg-second{
+    background-color: var(--second);
+    color: white;
+}
+.bg-third{
+    background-color: var(--third);
+    color: white;
+}
+.bg-fourth{
+    background-color: var(--fourth);
+    color: white;
+}
+.bg-fifth{
+    background-color: var(--fifth);
+    color: white;
+}
