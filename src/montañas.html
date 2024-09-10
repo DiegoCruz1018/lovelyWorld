@@ -32,13 +32,33 @@
     <span class="sr-only">Toggle menu</span>
     </button>
 
-      <div class="offcanvas offcanvas-start hidden" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+      <div class="offcanvas offcanvas-start hidden data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header bg-indigo-300">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Categorias</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          <p>Try scrolling the rest of the page to see this option in action.</p>
+        <div class="offcanvas-body bg-indigo-300">
+          <nav class="grid gap-2">
+            <a
+              class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors bg-indigo-400 hover:text-primary text-white  text-2xl font-bold"
+              href="montañas.html"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+              </svg>
+              Montañas
+            </a>
         </div>
       </div>
   </header>
@@ -159,12 +179,12 @@
     </div>
 
     <main class="md:ml-64 justify-center my-3">
-      <div class="bg-white shadow-md shadow-black-800 ms-3 rounded-md">
+      <div class="bg-white shadow-md shadow-black-800 ms-md-3 me-md-1 mx-2 rounded-md">
         <p class="p-2 mt-1 mx-1">Explora las maravillas de nuestro mundo a través de mis fotos naturales y vácte que cuentan historias únicas. Sumérjase en paisajes impresionantes, culturas fascinantes y una diversidad asombrosa, revelando la belleza y complejidad de nuestro planeta. Los 90 países o territorios visitados ofrecen una historia única para contar, una experiencia para vivir y una lección de aprender.</p>
       </div>
 
       <div class="container">
-        <div class="ms-1 row">
+        <div class="ms-md-1 row">
           <div class="p-1 rounded-lg hover:shadow-md hover:bg-white overflow-hidden md:col-md-2 col-md-6 col-lg-4 mt-0 mb-2">
             <img 
                 src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
