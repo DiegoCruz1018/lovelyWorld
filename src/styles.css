@@ -29,3 +29,10 @@
 /* .margin{
     margin-right: 0.1px;
 } */
+.hover-effect{
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-effect:hover{
+    background-color: rgba(248, 246, 246, 0.52); /* Cambia el color de fondo al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .52);
+}
