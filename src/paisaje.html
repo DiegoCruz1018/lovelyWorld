@@ -4,8 +4,396 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lovely Worl | Montaña 1</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Montaña 1</h1>
+<body class="bg-gray-100">
+    <header class="flex justify-between md:justify-center items-center h-20 bg-white shadow-md shadow-black-950 md:ml-64 rounded-md">
+        <h1 class="text-center font-bold ml-2 text-lg"><a class="text-black text-decoration-none" href="index.html">Lovely World</a></h1>
+        <button class="sm:btn py-2 px-4 rounded-md m-2 bg-gray-100 md:hidden font-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+          >
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+          <span class="sr-only">Toggle menu</span>
+        </button>
+
+          <div class="offcanvas offcanvas-start hidden bg-indigo-300" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header bg-indigo-300">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Categorias</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-indigo-300">
+              <nav class="grid gap-2">
+                <a
+                  class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors bg-indigo-400 hover:text-primary text-white  text-2xl font-bold"
+                  href="montañas.html"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-5 w-5"
+                  >
+                    <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+                  </svg>
+                  Montañas
+                </a>
+    
+                <a
+                  class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors hover:bg-indigo-400 hover:text-primary text-white underline-offset-0 text-2xl font-bold"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-5 w-5"
+                  >
+                    <path d="M17.75 9.01c-.52 2.08-1.83 3.64-3.18 5.49l-2.6 3.54-2.97 4-3.5-2.54 3.85-4.97c-1.86-2.61-2.8-3.77-3.16-5.44"></path>
+                    <path d="M17.75 9.01A7 7 0 0 0 6.2 9.1C6.06 8.5 6 7.82 6 7c0-3.5 2.83-5 5.98-5C15.24 2 18 3.5 18 7c0 .73-.09 1.4-.25 2.01Z"></path>
+                    <path d="m9.35 14.53 2.64-3.31"></path>
+                    <path d="m11.97 18.04 2.99 4 3.54-2.54-3.93-5"></path>
+                    <path d="M14 8c0 1-1 2-2.01 3.22C11 10 10 9 10 8a2 2 0 1 1 4 0"></path>
+                  </svg>
+                  Ríos
+                </a>
+    
+                <a
+                  class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors hover:bg-indigo-400 hover:text-primary text-white underline-offset-0 text-2xl font-bold"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-5 w-5"
+                  >
+                    <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"></path>
+                    <path d="M7 16v6"></path>
+                    <path d="M13 19v3"></path>
+                    <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"></path>
+                  </svg>
+                  Bosques
+                </a>
+    
+                <a
+                  class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors hover:bg-indigo-400 hover:text-primary text-white underline-offset-0 text-2xl font-bold"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-5 w-5"
+                  >
+                    <path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z"></path>
+                    <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28"></path>
+                  </svg>
+                  Playas
+                </a>
+              </nav>
+            </div>
+          </div>
+      </header>
+
+        <div class="fixed top-0 left-0 h-full w-64 bg-indigo-300 p-4 hidden md:block">
+          <h2 class="mb-5 font-bold text-black text-2xl text-center">Categorías</h2>
+          <nav class="grid gap-2">
+            <a
+              class="flex items-center text-decoration-none gap-2 rounded-md px-3 py-2 transition-colors bg-indigo-400 hover:text-primary text-white  text-2xl font-bold"
+              href="montañas.html"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+              </svg>
+              Montañas
+            </a>
+            <a
+              class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors hover:bg-indigo-400 hover:text-primary text-white underline-offset-0 text-2xl font-bold"
+              href="#"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M17.75 9.01c-.52 2.08-1.83 3.64-3.18 5.49l-2.6 3.54-2.97 4-3.5-2.54 3.85-4.97c-1.86-2.61-2.8-3.77-3.16-5.44"></path>
+                <path d="M17.75 9.01A7 7 0 0 0 6.2 9.1C6.06 8.5 6 7.82 6 7c0-3.5 2.83-5 5.98-5C15.24 2 18 3.5 18 7c0 .73-.09 1.4-.25 2.01Z"></path>
+                <path d="m9.35 14.53 2.64-3.31"></path>
+                <path d="m11.97 18.04 2.99 4 3.54-2.54-3.93-5"></path>
+                <path d="M14 8c0 1-1 2-2.01 3.22C11 10 10 9 10 8a2 2 0 1 1 4 0"></path>
+              </svg>
+              Ríos
+            </a>
+            <a
+              class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors hover:bg-indigo-400 hover:text-primary text-white underline-offset-0 text-2xl font-bold"
+              href="#"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"></path>
+                <path d="M7 16v6"></path>
+                <path d="M13 19v3"></path>
+                <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"></path>
+              </svg>
+              Bosques
+            </a>
+            <a
+              class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors hover:bg-indigo-400 hover:text-primary text-white underline-offset-0 text-2xl font-bold"
+              href="#"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M10.165 6.598C9.954 7.478 9.64 8.36 9 9c-.64.64-1.521.954-2.402 1.165A6 6 0 0 0 8 22c7.732 0 14-6.268 14-14a6 6 0 0 0-11.835-1.402Z"></path>
+                <path d="M5.341 10.62a4 4 0 1 0 5.279-5.28"></path>
+              </svg>
+              Playas
+            </a>
+            <a
+              class="flex items-center gap-2 text-decoration-none rounded-md px-3 py-2 transition-colors hover:bg-indigo-400 hover:text-primary text-white underline-offset-0 text-2xl font-bold"
+              href="#"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+              >
+                <path d="M15.2 22H8.8a2 2 0 0 1-2-1.79L5 3h14l-1.81 17.21A2 2 0 0 1 15.2 22Z"></path>
+                <path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0"></path>
+              </svg>
+              Cascadas
+            </a>
+          </nav>
+        </div>
+    
+        <main class="md:ml-64 justify-center mb-3">
+            <div class="image-header relative shadow-md shadow-black-800">
+                <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 w-full h-full">
+                    <h1 data-aos="fade-right" class="text-white">Cataratas Wentworth</h1>
+                    <p data-aos="fade-right" class="text-white">Montañas Azules</p>
+                </div>
+            </div>
+
+            <div class="bg-white md:container shadow-md shadow-black-800 rounded-md ms-md-3 me-md-1 mx-2 my-3 p-2">
+                <h2 class="text-center mt-2 text-2xl font-semibold">Disfrutar de las cascadas de las Cataratas Wentworth</h2>  
+                <p class="mx-2 p-2">
+                  Las Montañas Azules son una región montañosa ubicada en Nueva Gales del Sur, Australia,
+                  que forma parte de la Gran Cordillera Divisoria. Conocidas por su impresionante belleza
+                  natural, las Montañas Azules ofrecen vistas panorámicas, acantilados escarpados, cascadas
+                  y densos bosques de eucaliptos que crean una neblina azulada, dando nombre a la región.
+                </p>
+
+                <div data-aos="fade-left" class="flex justify-center items-center">
+                  <div class="border border-gray-600 m-2 rounded-lg w-full">
+                    <h3 class="text-center text-2xl font-semibold my-2">Qué ver y hacer</h3>
+                    <ul class="list-disc pl-5 space-y-2 grid justify-center"">
+                      <li>Visitar las Tres Hermanas, una formación rocosa icónica</li>
+                      <li>Explorar el Scenic World con su teleférico y ferrocarril escénico</li>
+                      <li>Hacer senderismo por los numerosos senderos del parque nacional</li>
+                      <li>Disfrutar de las cascadas, como las Cataratas Wentworth</li>
+                      <li>Visitar los jardines botánicos de Mount Tomah</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div data-aos="flip-up" class="mt-4">
+                    <!-- Slider main container -->
+                    <swiper-container class="mySwiper my-3" effect="cards" grab-cursor="true">
+                      <swiper-slide> <img src="https://thumbs.dreamstime.com/b/cascada-en-las-monta%C3%B1as-4452232.jpg" alt="Imagen 1"> </swiper-slide>
+                      <swiper-slide> <img src="https://st.depositphotos.com/1008826/54992/i/450/depositphotos_549920388-stock-photo-wentworth-falls-located-in-blue.jpg" alt="Imagen 2"> </swiper-slide>
+                      <swiper-slide> <img src="https://us.123rf.com/450wm/esmehelit/esmehelit1610/esmehelit161000052/67183697-magnificent-waterfall-view-from-beneath-at-the-bottom-of-gorge-wentworth-falls-royal-national-park.jpg?ver=6" alt="Imagen 3"> </swiper-slide>
+                      <swiper-slide> <img src="https://thumbs.dreamstime.com/b/cascada-de-wentworth-5430755.jpg" alt="Imagen 4"> </swiper-slide>
+                      <swiper-slide> <img src="https://thumbs.dreamstime.com/b/wentworth-cae-cascada-monta%C3%B1as-azules-24553809.jpg" alt="Imagen 5"> </swiper-slide>
+                    </swiper-container>
+                </div>
+
+                <div data-aos="zoom-in-up" class="flex justify-center items-center">
+                  <div class="m-1 rounded-lg p-3 w-full justify-center">
+                    <div id="map" class="map"></div>
+                  </div>
+                </div>
+
+                <div data-aos="zoom-out-up" class="flex justify-center items-center">
+                  <div class="border border-gray-600 m-2 rounded-lg p-3 card-with justify-center">
+                    <div class="flex items-center space-x-2">
+                      <i class="fa-solid fa-calendar me-1"></i>
+                      <span>Mejor época: Primavera (Septiembre a Noviembre)</span>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                      <i class="fa-solid fa-sun me-1 my-3"></i>
+                      <span>Clima: Templado, veranos cálidos e inviernos frescos</span>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                      <i class="fa-solid fa-car-side me-1"></i>
+                      <span>A 2 horas en coche desde Sídney</span>
+                    </div>
+                    <button class="w-full btn btn-primary my-2" >Planificar Visista</button>
+                  </div>
+                </div>
+
+                <div data-aos="zoom-out-down" class="flex justify-center">
+                  <div class="my-3 rounded-lg w-full">
+                    <h3 class="text-center my-2">
+                      <i class="fa-solid fa-circle-info"></i>
+                      Consejos para visitantes
+                    </h3>
+                    <ul class="text-md grid justify-center">
+                      <li>Lleva ropa adecuada para caminatas y cambios de clima</li>
+                      <li>Usa protector solar y lleva suficiente agua</li>
+                      <li>Compra el pase de parque nacional si planeas quedarte varios días</li>
+                      <li>Respeta la vida silvestre y no alimentes a los animales</li>
+                      <li>Infórmate sobre los niveles de peligro de incendio antes de tu visita</li>
+                      <li>Considera contratar un guía local para explorar áreas menos conocidas</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+
+          //Scroll
+          AOS.init();
+
+          //Maps
+          const lat = -33.6006946
+          const lng = 150.4089339
+          const zoom = 16
+
+          var map = L.map('map').setView([lat, lng], zoom);
+
+          L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+
+          L.marker([lat, lng]).addTo(map)
+              .bindPopup(`
+                <h4>Montañas Azules</h4>
+                <i class="fa-solid fa-location-dot me-2"></i>
+                <span>Nueva Gales del Sur, Australia</span>
+              `)
+              .openPopup();
+        </script>
+
+        <script type="module">
+          import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+          const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'vertical',
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+        </script>
 </body>
 </html>
