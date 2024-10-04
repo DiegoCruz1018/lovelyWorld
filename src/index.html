@@ -8,12 +8,16 @@
         <link rel="stylesheet" href="./output.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
     <body class="bg-gray-100">
 
-      <header class="flex justify-between md:justify-center items-center h-20 bg-white shadow-md shadow-black-950 md:ml-64 rounded-md">
+      <header class="flex justify-between md:justify-center items-center h-20 bg-white shadow-md shadow-black-950 md:ml-64">
         <h1 class="text-center font-bold ml-2 text-lg"><a class="text-black text-decoration-none" href="index.html">Lovely World</a></h1>
         <button class="sm:btn py-2 px-4 rounded-md m-2 bg-gray-100 md:hidden font-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
           <svg
@@ -253,14 +257,47 @@
           </nav>
         </div>
 
+        <div class="md:ml-64 justify-center">
+          <swiper-container class="mySwiper" scrollbar-hide="true">
+            <swiper-slide>
+              <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/07/Cascada_de_Tamul_vista_desdes_abajo.jpg" alt="Imagen1">
+              <div class="swiper-div"></div>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/reflection-salar-de-uyuni-bolivia.jpg?w=1900&h=1267" alt="Imagen2">
+              <div class="swiper-div"></div>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://blog-egipto.com/wp-content/uploads/2009/05/piramides_giza.jpg" alt="Imagen3">
+              <div class="swiper-div"></div>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://cdn.pixabay.com/photo/2023/11/07/06/20/temple-8371133_1280.jpg" alt="Imagen4">
+              <div class="swiper-div"></div>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://viajes.nationalgeographic.com.es/medio/2021/03/29/crawford-jolly-qk9crm42-hi-unsplash_f04ec0a6_1200x630.jpg" alt="Imagen5">
+              <div class="swiper-div"></div>
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://www.visitfinland.com/dam/jcr:6be00c01-1e28-45d0-a435-a5101d473132/Snowy%20trees%20in%20Salla%20National%20Park_%20Eeva%20M%C3%A4kinen_optimized.jpg" alt="Imagen 6">
+              <div class="swiper-div"></div>
+            </swiper-slide>
+            <swiper-slide> 
+              <img src="https://en-mexico.com.mx/fotos/chiapas/palenque-1.jpg" alt="Imagen 7"> 
+              <div class="swiper-div"></div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+
         <main class="p-4 md:ml-64 justify-center my-1">
-          <div class="bg-white md:container shadow-md shadow-black-800 rounded-md ms-md-3 me-md-1 mx-2" data-aos="fade-up">
+          <div data-aos="zoom-in" class="bg-white md:container shadow-md shadow-black-800 rounded-md ms-md-3 me-md-1 mx-2">
             <p class="p-2 mt-1 mx-1">Explora las maravillas de nuestro mundo a través de mis fotos naturales y vácte que cuentan historias únicas. Sumérjase en paisajes impresionantes, culturas fascinantes y una diversidad asombrosa, revelando la belleza y complejidad de nuestro planeta. Los 90 países o territorios visitados ofrecen una historia única para contar, una experiencia para vivir y una lección de aprender.</p>
           </div>
 
           <div class="container">
             <div class="ms-md-1 row">
-              <div class="p-2 hover-effect rounded-lg overflow-hidden md:col-md-2 col-md-6 col-lg-4 mt-0 mb-2" data-aos="fade-up">
+              <div data-aos="fade-up-right" class="p-2 hover-effect rounded-lg overflow-hidden md:col-md-2 col-md-6 col-lg-4 mt-0 mb-2">
                 <img 
                     src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                     alt="Hermoso paisaje montañoso" 
@@ -298,7 +335,7 @@
                 </div>
               </div>  <!-- col -->
 
-              <div data-aos="fade-up" class="p-2 hover-effect rounded-lg hover:shadow-md overflow-hidden col-md-6 col-lg-4 mt-0 mb-2">
+              <div data-aos="fade-up-left" class="p-2 hover-effect rounded-lg hover:shadow-md overflow-hidden col-md-6 col-lg-4 mt-0 mb-2">
                 <img 
                   src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                   alt="Hermoso paisaje montañoso" 
