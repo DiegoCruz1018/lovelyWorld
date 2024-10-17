@@ -6,9 +6,26 @@
     --fifth: #f4d279;
 }
 
+.roboto-condensed{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.h1-color{
+  color: rgb(55, 216, 55);
+}
+
+.span-color{
+  background-color: rgb(89, 240, 89);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
 .bg-first{
-    background-color: var(--first);
-    color: white;
+    background-color: rgba(77, 243, 77, 0.664);
+    color: Black;
 }
 .bg-first-dark{
   background-color: #aac4b0;
