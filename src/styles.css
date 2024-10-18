@@ -6,7 +6,11 @@
     --fifth: #f4d279;
 }
 
-.roboto-condensed{
+bg-body{
+  background-color: rgba(60, 235, 60, 0.548);
+}
+
+.roboto-condensed, h2, a, p, h5{
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
@@ -17,22 +21,34 @@
 }
 
 .span-color{
-  background-color: rgb(89, 240, 89);
+  background-color: rgb(55, 216, 55);
   color: white;
   padding: 5px 8px;
   border-radius: 10px;
 }
 
 .bg-first{
-    background-color: rgba(77, 243, 77, 0.664);
+    background-color: white;
     color: Black;
 }
 .bg-first-dark{
   background-color: #aac4b0;
 }
-.enlace:hover{
-  background-color: #aac4b0;
+.enlace{
+  color: black;
 }
+.enlace:hover{
+  background-color: rgb(55, 216, 55);
+  color: white;
+}
+
+.bg-boton{
+  background-color: rgb(55, 216, 55);
+}
+.bg-boton:hover{
+  background-color: rgb(48, 189, 48);
+}
+
 .bg-second{
     background-color: var(--second);
     color: white;
