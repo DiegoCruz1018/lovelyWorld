@@ -37,6 +37,10 @@ bg-body{
 .enlace{
   color: black;
 }
+.enlace-activo{
+  background-color: rgb(55, 216, 55);
+  color: white;
+}
 .enlace:hover{
   background-color: rgb(55, 216, 55);
   color: white;

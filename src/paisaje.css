@@ -39,12 +39,26 @@ swiper-slide {
 }
 
 .bg-first{
-    background-color: var(--first);
-    color: white;
+    background-color: white;
+    color: Black;
 }
 .bg-first-dark{
   background-color: #aac4b0;
 }
-.enlace:hover{
-  background-color: #aac4b0;
+.enlace{
+    color: black;
 }
+.enlace-activo{
+    background-color: rgb(55, 216, 55);
+    color: white;
+}
+.enlace:hover{
+    background-color: rgb(55, 216, 55);
+    color: white;
+}
+.bg-boton{
+    background-color: rgb(55, 216, 55);
+  }
+  .bg-boton:hover{
+    background-color: rgb(48, 189, 48);
+  }
